@@ -9,7 +9,7 @@ $ipp = $_POST['ip']; # Form must use POST. if it uses GET, use the line below:
 $usrr = $_POST['user']; # Form must use POST. if it uses GET, use the line below: 
 $pwdd = $_POST['pass']; # Form must use POST. if it uses GET, use the line below: 
 $portt = $_POST['port']; # Form must use POST. if it uses GET, use the line below: 
-$text = '<?php ////////////////////////////Config File for Minedmin////////////////////////// include("meth.php"); $version = "0.0.3 - Alpha";  $ip  = '. $ipp .' ; $port        = '.  $portt .'; $user        = '. $usrr  .'; $pwd        = '. $pwdd .'; $salt        = "salt"; $api        = new JSONAPI($ip, $port, $user, $pwd, $salt);';
+$text = '<?php ////////////////////////////Config File for Minedmin include("meth.php"); $version = "0.0.3 - Alpha";  $ip  = '. $ipp .' ; $port        = '.  $portt .'; $user        = '. $usrr  .'; $pwd        = '. $pwdd .'; $salt        = "salt"; $api        = new JSONAPI($ip, $port, $user, $pwd, $salt);';
 
 $fp = fopen ($filename, "w"); # w = write to the file only, create file if it does not exist, discard existing contents 
 if ($fp) { 
